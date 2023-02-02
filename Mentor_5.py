@@ -31,6 +31,17 @@ elif n3 > n1 and n3 > n2:
 else:
     print('같은 수를 입력했습니다!')
 
+# 3번_다른풀이
+num1, num2, num3 = map(int, input('정수 3개를 입력하시오>>').split())
+if num1 > num2 and num1 > num3:
+    print(f'가장 큰 수는 {num1}입니다.')
+elif num2 > num1 and num2 > num3:
+    print(f'가장 큰 수는 {num2}입니다.')
+elif num3 > num1 and num3 > num2:
+    print(f'가장 큰 수는 {num3}입니다.')
+else:
+    print('같은 수를 입력했습니다!')
+
 # 4번
-car_number = input('차량번호를 입력하세요>> ')
-print(f'차량번호 "{car_number}"는 오늘', '운행가능입니다.' if int(car_number[-1]) % 2 == 0 else '운행불가입니다.')
+car = input('차량번호를 입력하세요>> ')
+print(f'차량번호 "{car}"는 오늘', '운행가능입니다.' if int(car[-1]) % 2 == 0 else '운행불가입니다.')
